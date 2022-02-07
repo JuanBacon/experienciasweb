@@ -1,55 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;400;700&display=swap');
+    </style>
     <meta charset="UTF-8">
     <title>La caja de Mr.Meeseeks</title>
 </head>
-<body style="margin: 0px; background-color: #2F638E;">
-
-    <header style="text-align: center; background-color: ghostwhite; margin: 40px">
-        <img width="220" height="140" src="mrmeeseeks.png" alt="Mr.meeseeks">
-        <h1>La caja de Mr.Meeseeks</h1> 
+<body style="margin: 0px; font-family: 'IBM Plex Sans Thai Looped', sans-serif; background-color: #F2F3F5;">
+    <!-- Header -->
+    <nav style="text-align: right ; background-color: #FFFFFF;border-bottom: 5px solid #2F638E ; position: fixed; height: 30px; top: 0; width: 100%; box-shadow:0px 0px 10px #020202;" >
+        <span style="font-size: 18px; word-spacing: 12px; padding: 40px"> <a style="padding: 6px; color: #f2f2f2; background-color: #191a1d;" href="LaCajaDeMrMeeseeks.html">INICIO</a> <a style="color: #191a1d" href="About.html">ACERCA DE</a> <a style="color: #191a1d" href="Galery.html">GALERÍA</a> <a style="color: #191a1d" href="Contact.html">CONTACTO </a> </span>
+    </nav>
+    <header style="text-align: left; background-color: #FFFFFF; margin: 80px 40px 40px 40px; box-shadow: 0px 0px 10px #E2E2E2; border-radius: 8px 8px 8px 8px; border: #F2F3F5 1px solid;">    
+        <div style="clear: both; display: table; content: none;">
+            <div style="width: 50%;">
+                <img width="240" height="150" src="./assets/img/mrmeeseeks.png" alt="Mr.meeseeks" style="float: left;">
+            </div>
+            <div style="float: left; width: 50%;">
+                <h1 style="margin: 0px; font-size: 50px;">La caja de Mr.Meeseeks</h1>
+                <p style="margin: 0; font-weight: 400; text-align:left;"> 
+                    En este portal web se exponen y analizan diversos elementos, sucesos e ideas
+                    de la serie animada <b>Rick Y Morty</b> que son cientificamente verídicos o que 
+                    puedan presentarse bajo las condiciones físicas y matemáticas de nuestro universo.
+                </p>
+            </div>
+        </div>
     </header>
-    
-        <p> 
-        En este portal web se exponen y analizan diversos elementos, sucesos e ideas
-        de la serie animada <b>Rick Y Morty</b> que son cientificamente verídicos o que 
-        puedan presentarse bajo las condiciones físicas y matemáticas de nuestro universo.
-        </p>
-
-        <h2>Sobre la serie</h2>
-        <img width="1300" height="600" src="https://i.blogs.es/17012b/rick-morty-4x07-1939353/1366_521.jpeg" alt="Baner Rick y Morty">
-
-        <p>
-            Rick y Morty es una <b><u>serie animada estadounidense</u></b> creada por <i>Justin Roiland</i> y <i>Dan Harmon</i> en el 2013 para <b><u>Adult Swim</u></b>, 
-            cuenta actualmente con 51 capitulos, distribuidos en 5 temporadas.
-            <br>La serie narra las aventuras y desventuras que viven un cientifico loco y su nieto en el basto cosmos y universos paralelos mientras lidian con dramas y 
-            conflictos familiares con su hija y su esposo.
-            <br> Sus creadores mencionan que la serie vive esta fusión entre dramas familiares y aventuras intergalácticas como una unión entre <b>Los Simpsons</b> y <b>Futurama</b>,
-            famosas series animadas desde los 90's hasta la actualidad.
-        </p>
-
-        <h2>Intro</h2>
-        <video  src="Rick And Morty Season 5 Intro.mp4" controls></video>
-        <h2>Personajes principales</h2>
-        <p>
-            <ul>
-                <li> <b>Rick Sanchez:</b> Cientifico loco</li>
-                <li> <b>Morty Smith:</b> Nieto de Rick</li>
-                <li> <b>Summer Smith:</b> Nieta de Rick</li>
-                <li> <b>Beth Smith:</b> Hija de Rick</li>
-                <li> <b>Jerry Smith:</b>Espso de Beth</li>
-            </ul>
-        </p>
-
-        <h2>Premios</h2>
-        <p>
-            <ol>
-                <li>2015 BTVA Voice Acting Awards</li>
-                <li>2015 IGN Awards</li>
-                <li>2015 IGN People's Choice Award	</li>
-                <li>2017 IGN Awards</li>
-            </ol>
-        </p>
+    <!-- Main -->
+    <main style="margin: 0px 40px 40px 40px; background-color: #FFFFFF; box-shadow: 0px 0px 10px #E2E2E2; border-radius: 8px 8px 8px 8px;">
+        <!-- Sobre la serie -->
+        <section style="background-color: #FFFFFF; background-image: url(./assets/img/meeseeks.jpeg); border-radius: 8px 8px 0px 0px;">
+            <h2 style="margin: 0px; padding: 20px; font-size: 40px;">SOBRE LA SERIE</h2>
+        </section>
+        <section style="padding: 0px 40px 40px 40px; text-align: justify;">
+            <p>
+                Rick y Morty es una <b><u>serie animada estadounidense</u></b> creada por <i>Justin Roiland</i> y <i>Dan Harmon</i> en el 2013 para <b><u>Adult Swim</u></b>, 
+                cuenta actualmente con 51 capitulos, distribuidos en 5 temporadas.La serie narra las aventuras y desventuras que viven un cientifico loco y su nieto en el basto cosmos y universos paralelos mientras lidian con dramas y 
+                conflictos familiares con su hija y su esposo. Sus creadores mencionan que la serie vive esta fusión entre dramas familiares y aventuras intergalácticas como una unión entre <b>Los Simpsons</b> y <b>Futurama</b>,
+                famosas series animadas desde los 90's hasta la actualidad.
+            </p>
+            <div style="text-align: center;">
+                <img width="500" height="230" src="https://i.blogs.es/17012b/rick-morty-4x07-1939353/1366_521.jpeg" alt="Baner Rick y Morty">
+            </div>
+            <h2>Personajes principales</h2>
+            <p>
+                <ul>
+                    <li> <b>Rick Sanchez:</b> Cientifico loco</li>
+                    <li> <b>Morty Smith:</b> Nieto de Rick</li>
+                    <li> <b>Summer Smith:</b> Nieta de Rick</li>
+                    <li> <b>Beth Smith:</b> Hija de Rick</li>
+                    <li> <b>Jerry Smith:</b>Espso de Beth</li>
+                </ul>
+            </p>
+           
+        </section>
+        <!-- Intro de la serie -->
+        <section style="background-color: #FFFFFF; background-image: url(./assets/img/rickymorty1.jpg); background-position:left;">
+            <h2 style="margin: 0px; padding: 20px; font-size: 40px;">INTRO DE LA SERIE</h2>
+        </section>
+        <section style="padding: 0px 40px 40px 40px;">
+            <div style="text-align: center;">
+                <video  style="padding: 40px 40px 0px 40px" src="./assets/vid/Rick And Morty Season 5 Intro.mp4" controls width="60%" height="60%">
+                </video>
+                <p style="margin:0">Video introductorio de Rick Y Morty: Temporada 5</p>
+            </div>
+        </section>
+        <!-- Premios -->
+        <section style="background-color: #FFFFFF; background-image: url(./assets/img/rickymorty2png.png); background-position: center;">
+            <h2 style="margin: 0px; padding: 20px; font-size: 40px;">PREMIOS</h2>
+        </section>
+        <section style="padding: 0px 40px 40px 40px;">
+            <p>
+                <ol>
+                    <li>2015 BTVA Voice Acting Awards</li>
+                    <li>2015 IGN Awards</li>
+                    <li>2015 IGN People's Choice Award	</li>
+                    <li>2017 IGN Awards</li>
+                </ol>
+            </p>
+        </section> 
+    </main>
+    <!-- Footer -->
+    <footer style="background-color: #191a1d; height: 100px; text-align: center; margin-bottom: -200px; position: relative; width: 100%;">
+        <p style="margin: 0; color: #F2F3F5; padding-top: 20PX;">Esta pagina ha sido creada con propósitos académicos, los derechos de imagen de Rick Y Morty pertenecen a Adult Swim</p>
+        <p style="margin: 0; color: #F2F3F5;">Copyright © Adult Swim 2022</p>
+    </footer>
 </body>
 </html>
