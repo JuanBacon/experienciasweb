@@ -33,6 +33,102 @@
                 <img src="https://wallpapercave.com/wp/wp2119144.jpg" alt="imagen" width="400px" height="230px">
         </center>
 
+        <form action="./submit.html" method="post">
+            <label for="username">Nombre</label>
+            <input type="text" id="username">
+            <br>
+            <label for="pass">Password</label>
+            <input type="password" name="password" id="pass">
+            <br>
+            <label for="phone">Celular</label>
+            <input type="number" name="phone" id="phone" step="null">
+            <br>
+            <label for="age">Rango de edad</label>
+            <input type="range" name="age" id="age" min="10" max="100">
+            <br>
+            <h5>Escoge tus favoritos</h5>
+            <label for="Basketball"> Basketball</label>
+            <input type="checkbox" name="Basketball" id="Basketball">
+            <label for="Futbol"> Fútbol</label>
+            <input type="checkbox" name="Futbol" id="Futbol">
+
+            <h5>Genero</h5>
+            <label for="Masculino"> Masculino</label>
+            <input type="radio" name="genero" id="masculino" >
+
+            <label for="Masculino"> Femenino</label>
+            <input type="radio" name="genero" id="femenino" >
+
+            <label for="Masculino"> No binario</label>
+            <input type="radio" name="genero" id="NoBinario" >
+            <br>
+            <label for="Masculino"> Prefiero no decirlo</label>
+            <input type="radio" name="genero" id="noAplica" >
+            <br>
+            <h5>Ciudad</h5>
+            <select name="city" id="city">
+                <option value="Cali">Cali</option>
+                <option value="Bogota">Bogotá</option>
+                <option value="Barranquilla">Barranquilla</option>
+                <option value="Medellin">Medellín</option>
+                <option value="Buaneventura">Buaneventura</option>
+            </select>
+            <br>
+            <h5>Barrio</h5>
+            <input type="text" list="barrios">
+            <datalist id="barrios">
+                <option value="bocha"></option>
+                <option value="Calera"></option>
+                <option value="flora"> </option>
+                <option value="Castillo"></option>
+                <option value="poblado"></option>
+            </datalist>
+            <br>
+            <label for="comments">Comentarios</label>
+            <br>
+           <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+          </form>
+
+          <table style="border: 2px solid black;"> 
+              <thead>
+                  <tr>
+                      <td>Nombre</td>
+                      <td>Apellido</td>
+                      <td>Edad</td>
+                      <td>Cuota</td>
+                    </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Juan</td>
+                      <td>Bustamante</td>
+                      <td>21</td>
+                      <td>5000</td>
+                  </tr>
+                  <tr>
+                    <td>Juan</td>
+                    <td>Bustamante</td>
+                    <td>21</td>
+                    <td>5000</td>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>Bustamante</td>
+                    <td>21</td>
+                    <td>5000</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                 <tr>
+                     <td colspan="3"> Total</td>
+                     <td>15000</td>
+                 </tr>
+              </tfoot>
+
+
+          </table>
     </main>
     <footer style="background-color: darkgreen;">
         <h1>CREADO POR BUSTAMANTE</h1>
