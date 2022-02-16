@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;400;700&display=swap');
-    </style>
-    <meta charset="UTF-8">
-    <title>La caja de Mr.Meeseeks</title>
-</head>
-<body style="margin: 0px; font-family: 'IBM Plex Sans Thai Looped', sans-serif; background-color: #F2F3F5; height: 50vh;">
-    <!-- Header -->
-    <nav style="text-align: right ; background-color: #FFFFFF;border-bottom: 5px solid #2F638E ; position: fixed; height: 30px; top: 0; width: 100%; box-shadow:0px 0px 10px #020202;" >
-        <span style="font-size: 18px; word-spacing: 12px; padding: 40px"> <a style="color: #191a1d" href="LaCajaDeMrMeeseeks.html">INICIO</a> <a style="color: #191a1d" href="About.html">ACERCA DE</a> <a style="padding: 6px; color: #f2f2f2; background-color: #191a1d;" href="Galery.html" href="">GALERÍA</a> <a style="color: #191a1d" href="Contact.html">CONTACTO </a> </span>
-    </nav>
-    <header style="text-align: left; background-color: #FFFFFF; margin: 80px 40px 40px 40px; box-shadow: 0px 0px 10px #E2E2E2; border-radius: 8px 8px 8px 8px; border: #F2F3F5 1px solid;">    
-        <div style="clear: both; display: table; content: none;">
-            <div style="width: 50%;">
-                <img width="240" height="150" src="../assets/img/mrmeeseeks.png" alt="Mr.meeseeks" style="float: left;">
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+        <meta charset="UTF-8">
+        <title>La caja de Mr.Meeseeks</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <nav>
+            <span class="menu"> <a href="LaCajaDeMrMeeseeks.html" class="menuButtom">INICIO</a> <a href="About.html" class="menuButtom" >ACERCA DE</a> <a href="Galery.html" class="currentMenuButtom" >GALERÍA</a> <a href="Contact.html" class="menuButtom" >CONTACTO </a> </span>
+        </nav>
+        <header>    
+            <div class="container">
+                <div class="logo">
+                    <img width="240" height="150" src="../assets/img/mrmeeseeks.png" alt="Mr.meeseeks">
+                </div>
+                <div class="headerText">
+                    <h1>La caja de Mr.Meeseeks</h1>
+                    <p>
+                        En este portal web se exponen y analizan diversos elementos, sucesos e ideas
+                        de la serie animada <b>Rick Y Morty</b> que son cientificamente verídicos o que 
+                        puedan presentarse bajo las condiciones físicas y matemáticas de nuestro universo.
+                    </p>
+                </div>
             </div>
-            <div style="float: left; width: 50%;">
-                <h1 style="margin: 0px; font-size: 50px;">La caja de Mr.Meeseeks</h1>
-                <p style="margin: 0; font-weight: 400; text-align:left;"> 
-                    En este portal web se exponen y analizan diversos elementos, sucesos e ideas
-                    de la serie animada <b>Rick Y Morty</b> que son cientificamente verídicos o que 
-                    puedan presentarse bajo las condiciones físicas y matemáticas de nuestro universo.
-                </p>
-            </div>
-        </div>
-    </header>
+        </header>
     <!-- Main -->
-    <main style="margin: 0px 40px 40px 40px; background-color: #FFFFFF; box-shadow: 0px 0px 10px #E2E2E2; border-radius: 8px 8px 8px 8px; min-height: 90%;">
+    <main>
         <!-- Sobre la serie -->
-        <section style="background-color: #FFFFFF; background-image: url(../assets/img/meeseeks.jpeg); border-radius: 8px 8px 0px 0px;">
-            <h2 style="margin: 0px; padding: 20px; font-size: 40px;">GALERÍA</h2>
+        <section class="sectionHeader back1 cornerTop">
+            <h2 class="sectionHeaderText">GALERÍA</h2>
         </section>
-        <section style="padding: 40px 40px 40px 40px; text-align: justify;">
+        <section class="sectionContent">
             <div style="text-align: center;">
                 <img width="500" height="230" src="../assets/img/personajes.jpg" alt="Baner Rick y Morty">
             </div>
@@ -68,8 +66,8 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer style="background-color: #191a1d; height: 100px; margin-top: 200px ;text-align: center; bottom: 0; position: relative; width: 100%;">
-        <p style="margin: 0; color: #F2F3F5; padding-top: 20PX;">Esta pagina ha sido creada con propósitos académicos, los derechos de imagen de Rick Y Morty pertenecen a Adult Swim</p>
-        <p style="margin: 0; color: #F2F3F5;">Copyright © Adult Swim 2022</p>
+    <footer>
+        <p>Esta pagina ha sido creada con propósitos académicos, los derechos de imagen de Rick Y Morty pertenecen a Adult Swim</p>
+        <p>Copyright © Adult Swim 2022</p>
     </footer>
 </html>

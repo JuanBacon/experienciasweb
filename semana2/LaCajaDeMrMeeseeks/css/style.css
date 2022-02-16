@@ -99,23 +99,26 @@ main .sectionHeaderText{
     font-size: 40px;
 }
 
-.section1{
-    border-radius: 8px 8px 0px 0px;
+.back1{
     background-image: url(../assets/img/meeseeks.jpeg);
 }
 
-.section2{
+.back2{
     background-image: url(../assets/img/rickymorty1.jpg);
     background-position:left;
 }
 
-.section3{
+.back3{
     background-image: url(../assets/img/rickymorty2png.png);
     background-position: center;
 }
 
+.cornerTop{
+    border-radius: 8px 8px 0px 0px;
+}
+
 main .sectionContent{
-    padding: 0px 40px 40px 40px;
+    padding: 40px 40px 40px 40px;
     text-align: justify;
 }
 
@@ -133,4 +136,38 @@ footer p {
     margin: 0;
     color: #F2F3F5;
     padding-top: 20PX;
+}
+
+.gridFlexDisplay{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.leftColumn{
+    width: 50%;
+    float: left;
+}
+.rightColumn{
+    width: 50%
+}
+
+.gridFlexDisplay div form input {
+    width: 80%; height: 30px; border-radius: 5px; margin-bottom: 10px;
+}
+#comment{
+    width: 80%;
+    height: 103px;
+    border-radius: 5px;
+    resize: none;
+}
+
+#submit{
+    font-weight: 600;
+    background-color: #2F638E; 
+    color: #f2f2f2;
+    width: 81%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
 }

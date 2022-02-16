@@ -1,57 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;400;700&display=swap');
-    </style>
-    <meta charset="UTF-8">
-    <title>La caja de Mr.Meeseeks</title>
-</head>
-<body style="margin: 0px; font-family: 'IBM Plex Sans Thai Looped', sans-serif; background-color: #F2F3F5;height: 50vh">
-    <!-- Header -->
-    <nav style="text-align: right ; background-color: #FFFFFF;border-bottom: 5px solid #2F638E ; position: fixed; height: 30px; top: 0; width: 100%; box-shadow:0px 0px 10px #020202;" >
-        <span style="font-size: 18px; word-spacing: 12px; padding: 40px"> <a style="color: #191a1d" href="LaCajaDeMrMeeseeks.html">INICIO</a> <a style="color: #191a1d" href="About.html">ACERCA DE</a> <a style="color: #191a1d" href="Galery.html">GALERÍA</a> <a style="padding: 6px; color: #f2f2f2; background-color: #191a1d;" href="Contact.html">CONTACTO </a> </span>
-    </nav>
-    <header style="text-align: left; background-color: #FFFFFF; margin: 80px 40px 40px 40px; box-shadow: 0px 0px 10px #E2E2E2; border-radius: 8px 8px 8px 8px; border: #F2F3F5 1px solid;">    
-        <div style="clear: both; display: table; content: none;">
-            <div style="width: 50%;">
-                <img width="240" height="150" src="../assets/img/mrmeeseeks.png" alt="Mr.meeseeks" style="float: left;">
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+        <meta charset="UTF-8">
+        <title>La caja de Mr.Meeseeks</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <nav>
+            <span class="menu"> <a href="LaCajaDeMrMeeseeks.html" class="menuButtom">INICIO</a> <a href="About.html" class="menuButtom" >ACERCA DE</a> <a href="Galery.html" class="menuButtom" >GALERÍA</a> <a href="Contact.html" class="currentMenuButtom" >CONTACTO </a> </span>
+        </nav>
+        <header>    
+            <div class="container">
+                <div class="logo">
+                    <img width="240" height="150" src="../assets/img/mrmeeseeks.png" alt="Mr.meeseeks">
+                </div>
+                <div class="headerText">
+                    <h1>La caja de Mr.Meeseeks</h1>
+                    <p>
+                        En este portal web se exponen y analizan diversos elementos, sucesos e ideas
+                        de la serie animada <b>Rick Y Morty</b> que son cientificamente verídicos o que 
+                        puedan presentarse bajo las condiciones físicas y matemáticas de nuestro universo.
+                    </p>
+                </div>
             </div>
-            <div style="float: left; width: 50%;">
-                <h1 style="margin: 0px; font-size: 50px;">La caja de Mr.Meeseeks</h1>
-                <p style="margin: 0; font-weight: 400; text-align:left;"> 
-                    En este portal web se exponen y analizan diversos elementos, sucesos e ideas
-                    de la serie animada <b>Rick Y Morty</b> que son cientificamente verídicos o que 
-                    puedan presentarse bajo las condiciones físicas y matemáticas de nuestro universo.
-                </p>
-            </div>
-        </div>
-    </header>
+        </header>
     <!-- Main -->
-    <main style=" margin: 0px 40px 40px 40px; background-color: #FFFFFF; box-shadow: 0px 0px 10px #E2E2E2; border-radius: 8px 8px 8px 8px; min-height: 90%;">
+    <main>
         <!-- Sobre la serie -->
-        <section style="background-color: #FFFFFF; background-image: url(../assets/img/meeseeks.jpeg); border-radius: 8px 8px 0px 0px;">
-            <h2 style="margin: 0px; padding: 20px; font-size: 40px;">Contacto</h2>
+        <section class="sectionHeader back3 cornerTop">
+            <h2 class="sectionHeaderText">Contacto</h2>
         </section>
-        <section style="padding: 0px 40px 40px 40px; text-align: justify;">
+        <section class="sectionContent">
             <p>Si quieres ponerte en contacto con el creador de esta página, tienes una duda, queja, reclamo o sugerencia, escoge entre una de estas
                 opciones de contacto </p>
-            <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-                <div style="width: 50%; float: left;">
+            <div class="gridFlexDisplay">
+                <div class="leftColumn">
                     <h2>Por Correo</h2>
                     <form action="./submitEmail.html">
                         
                         <label for="name"> Nombre</label>
                         <br>
-                        <input type="text" id="name" placeholder="Tu nombre" style="width: 80%; height: 30px; border-radius: 5px; margin-bottom: 10px;">
+                        <input type="text" id="name" placeholder="Tu nombre">
                         <br>
                         <label for="lastname"> Apellido</label>
                         <br>
-                        <input type="text" id="lasname" placeholder="Tu Apellido" style="width: 80%; height: 30px; border-radius: 5px; margin-bottom: 10px">
+                        <input type="text" id="lasname" placeholder="Tu Apellido">
                         <br>
                         <label for="Pais">País o Región</label>
                         <br>
-                        <input type="text" list="country" placeholder="Tu país" style="width: 80%; height: 30px; border-radius: 5px; margin-bottom: 10px">
+                        <input type="text" list="country" placeholder="Tu país">
                         <datalist id="country">
                             <option value="Colombia"></option>
                             <option value="Mexico"></option>
@@ -67,21 +65,21 @@
                         <br>
                         <label for="email">Correo electrónico</label>
                         <br>
-                        <input type="email" name="email" id="email" placeholder="alguien@example.com" style="width: 80%; height: 30px; border-radius: 5px; margin-bottom: 10px">
+                        <input type="email" name="email" id="email" placeholder="alguien@example.com">
                         <br>
-                        <input type="submit" value="ENVIAR" style="font-weight: 600; background-color: #2F638E;color: #f2f2f2; width: 81%; height: 40px; border-radius: 5px; margin-top: 10px; ">
+                        <input type="submit" value="ENVIAR" id="submit">
                     </form>
                 </div>
-                <div style="width: 50%;">
+                <div class="rightColumn">
                     <h2>Deja un comentario</h2>
                     <form action="./submitEmail.html">
                         <label for="name"> Nombre</label>
                         <br>
-                        <input type="text" id="name" placeholder="Tu nombre" style="width: 80%; height: 30px; border-radius: 5px; margin-bottom: 10px;">
+                        <input type="text" id="name" placeholder="Tu nombre">
                         <br>
                         <label for="Pais">País o Región</label>
                         <br>
-                        <input type="text" list="country" placeholder="Tu país" style="width: 80%; height: 30px; border-radius: 5px; margin-bottom: 10px">
+                        <input type="text" list="country" placeholder="Tu país">
                         <datalist id="country">
                             <option value="Colombia"></option>
                             <option value="Mexico"></option>
@@ -97,9 +95,9 @@
                         <br>
                         <label for="comment">Comentario</label>
                         <br>
-                        <textarea name="comment" id="comment" cols="50" rows="7" placeholder="Tu comentario" style="width: 80%; height: 103px; border-radius: 5px; resize: none;"></textarea>
+                        <textarea name="comment" id="comment" cols="50" rows="7" placeholder="Tu comentario"></textarea>
                         <br>
-                        <input type="submit" value="ENVIAR" style="font-weight: 600; background-color: #2F638E;color: #f2f2f2; width: 81%; height: 40px; border-radius: 5px; margin-top: 10px; ">
+                        <input type="submit" id="submit" value="ENVIAR">
 
                     </form>
                 </div>
@@ -107,9 +105,9 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer style="background-color: #191a1d; height: 100px; margin-top: 200 ;text-align: center; bottom: 0; position: relative; width: 100%;">
-        <p style="margin: 0; color: #F2F3F5; padding-top: 20PX;">Esta pagina ha sido creada con propósitos académicos, los derechos de imagen de Rick Y Morty pertenecen a Adult Swim</p>
-        <p style="margin: 0; color: #F2F3F5;">Copyright © Adult Swim 2022</p>
+    <footer>
+        <p>Esta pagina ha sido creada con propósitos académicos, los derechos de imagen de Rick Y Morty pertenecen a Adult Swim</p>
+        <p>Copyright © Adult Swim 2022</p>
     </footer>
 </body>
 </html>
