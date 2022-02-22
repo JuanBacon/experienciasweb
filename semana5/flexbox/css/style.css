@@ -1,0 +1,27 @@
+.container {
+background-color: red;
+padding: 40px;
+display: flex;
+flex-direction: row; 
+/*Determina la dirección del flex y el orden (Eje central)*/
+justify-content: center; 
+/*justifica el contenido en el eje principal*/
+align-items: center; 
+/*alinea los objetos en el eje secundario*/
+
+
+/* justify-content: space-around; */  
+/*Espacio alrededor de los objetos*/
+/* justify-content: space-between; */ 
+/*Espacio entre los objetos */
+flex-wrap: wrap;
+flex-grow: 1
+}
+
+.child {
+width: 100px;
+height: 100px;
+background-color: green;
+margin: 10px;
+font-size: 3rem;
+}

@@ -1,0 +1,21 @@
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgb(255,0,245), rgb(0,26,255));
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+    color: white;
+}
+
+h1 {
+
+    background: linear-gradient(rgb(255,255,255),rgb(255,0,245) );
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
