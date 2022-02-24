@@ -1,0 +1,19 @@
+.container{
+    background: purple;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 200px;
+    height: 50vh;
+}
+
+.item{
+    margin: 5px;
+    background-color: white;
+    text-align: center;
+    height: 200px;
+}
+
+.one{
+    grid-column: 1 / span 2;
+}
