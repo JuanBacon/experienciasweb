@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 
+*{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
@@ -7,17 +11,19 @@ body {
   height: 100vh;
 }
 #container {
-  display: grid;
-  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 #header {
   background-color: antiquewhite;
   text-align: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   padding: 20px;
-  height: 3vh;
+  height: 50px;
   width: 100%;
 }
 
@@ -26,13 +32,35 @@ body {
   display: inline;
 }
 
-#heroContent {
-  background-color: cadetblue;
+.sectionPage{
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px 0px 50px 0px;
-  margin-top: 3vh;
-  height: 15vh;
+  height: 50vh;
   width: 100%;
+}
+
+#heroContent {
+  background-color: cadetblue;
+}
+
+#description {
+  background-color: navajowhite;
+}
+
+#eventDetail {
+  background-color: aquamarine;
+}
+
+#spotifyList {
+  background-color: yellowgreen;
+  flex: 1;
+  width: 50vw;
+}
+
+#img {
+  background-color: yellow;
+  flex: 1;
+  width: 50vw;
 }
