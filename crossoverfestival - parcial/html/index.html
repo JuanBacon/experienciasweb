@@ -3,28 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
     <title>Crossover Festival</title>
 </head>
 <body>
 
     <header id="header">
-        <a href="#heroContent"><h3>HOME</h3></a>
-        <a href="#description"><p>INFORMACIÓN</p></a>
-        <a href="#eventDetail"><p>PROGRAMACIÓN</p></a>
-        <a href="#spotifyList"><p>SPOTIFY</p></a>
-        <a href="#pricing"><p>PRECIOS</p></a>
-        <a href="#form"><p>RESERVA</p></a>
-        <a href="#partners"><p>PATROCINADORES</p></a>
+        
+        <a href="#description" class="menuButtonLeft"><p>INFORMACIÓN</p></a>
+        <a href="#eventDetail" class="menuButtonLeft"><p>PROGRAMACIÓN</p></a>
+        <a href="#spotifyList" class="menuButtonLeft"><p>SPOTIFY</p></a>
+        <a href="#heroContent" ><img id="logoImg" src="../assets/img/logo.png" alt="Logo"></a>
+        <a href="#pricing" class="menuButtonRight"><p>PRECIOS</p></a>
+        <a href="#form" class="menuButtonRight"><p>RESERVA</p></a>
+        <a href="#partners" class="menuButtonRight"><p>PATROCINADORES</p></a>
     </header>
 
     <main id="container">
         <section class="sectionPage" id="heroContent"> 
-            <h1>TERE'S FESTIVAL</h1>
-            <p>Contenido creado para impactar y captar la atención del usuario</p>
+            <video playsinline autoplay muted loop poster="cake.jpg">
+                <source src="../assets/video/pexels-alena-darmel-7722221.mp4" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+            <div id="heroContentText">
+                <h1>TERE'S CROSSOVER FESTIVAL</h1>
+                <p>EL MEJOR FESTIVAL CROSSOVER DEL PAÍS</p>    
+            </div>
+
+            
         </section>
         <section class="sectionPage" id="description">
             <h2>DESCRIPCIÓN</h2>
-            <P>De qué trata el evento</P>
+            <P class="note">De qué trata el evento</P>
             <p>Quienes participan</p>
             <p>Fecha</p>
             <p>Lugar</p>
@@ -59,7 +69,7 @@
     </footer>
 
     <div>
-        <a href="#heroContent"><img src="../assets/img/up.png" alt="back to top" class="backToTop"></a>
+        <a href="#heroContent"><img src="../assets/img/arrow.png" alt="back to top" class="backToTop"></a>
     </div>
     
 </body>

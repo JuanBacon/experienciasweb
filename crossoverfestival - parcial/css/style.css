@@ -1,47 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 
-
-*{
+* {
   box-sizing: border-box;
 }
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
-  background-color: #f2f3f5;
+  background-color: #1d1d1d;
   height: 100vh;
+}
+#logoImg {
+  width: 120px;
+  height: 38px;
+  margin: 0;
+  padding: 0;
+  transition: all 0.2s ease;
+  transform: scale(1.2, 1.2);
+}
+.menuButtonLeft p {
+  opacity: 0;
+  transition: all 0.4s ease;
+  display: inline-block;
+  transform: translateX(60px);
+}
+.menuButtonRight p {
+  opacity: 0;
+  transition: all 0.4s ease;
+  position: relative;
+  transform: translateX(-60px);
+}
+
+
+#header {
+  background-color: #101010;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  padding: 14px;
+  height: 78px;
+  width: 100%;
+  z-index: 1;
+  box-shadow: #1d1d1d 0px 5px 30px;
+  display: inline-block;
+}
+#header * {
+  text-decoration: none;
+  padding: 0 4px 0 4px;
+}
+#header p {
+  display: inline-block;
+  color: white;
+  margin: 0px;
 }
 #container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 80px;
 }
-
-#header {
-  background-color: antiquewhite;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  padding: 20px;
-  height: 50px;
-  width: 100%;
-}
-
-#header *{
-  text-decoration: none;
-  color: black;
-  padding: 0 4px 0 4px;
-}
-
-#header h3,
-#header p {
-  display: inline;
-}
-
-.sectionPage{
+.sectionPage {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,17 +69,65 @@ body {
   padding: 50px 0px 50px 0px;
   height: 50vh;
   width: 100%;
+  filter: brightness(0.7);
+  transition: all 0.2s ease;
+
+
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0.3;
 }
 
 #heroContent {
-  background-color: cadetblue;
-  
+  background-color: #1d1d1d;
+  position: relative;
+  z-index: 0;
+}
+#heroContentText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+#heroContentText h1 {
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  animation: flicker 1.5s infinite alternate;
+}
+#heroContentText p {
+  margin: 0;
+  padding: 0;
 }
 
 #description {
-  background-color: navajowhite;
+  background-image: url(../assets/img/concert3.jpeg);
+  background-size: cover;
+  background-position: 0 100;
+  background-attachment:fixed;
+  color: white;
+  height: 60vh;
 }
-
+#description h2{
+  font-size: 40px;
+  margin-bottom: 0;
+}
+.note{
+  background-color: #fdfdfd;
+  border-radius: 15px;
+  width: 80%;
+  color: #1d1d1d;
+  padding: 15px;
+}
 #eventDetail {
   background-color: aquamarine;
 }
@@ -77,15 +145,15 @@ body {
 }
 
 #pricing {
-  background-color:brown;
+  background-color: brown;
 }
 
 #form {
-  background-color:steelblue;
+  background-color: steelblue;
 }
 
 #partners {
-  background-color:azure;
+  background-color: azure;
 }
 
 #footer {
@@ -102,12 +170,11 @@ body {
   width: 100px;
   height: 100px;
   position: fixed;
-  bottom: 40px;
-  right: 40px;
-  transition: all .2s ease;
+  bottom: 30px;
+  right: 30px;
+  transition: all 0.2s ease;
+  filter: drop-shadow(5px 5px 5px #222);
+  filter: opacity(1) drop-shadow(0 0 0 white);
 }
 
-.backToTop:hover{
-  transform: scale(1.2, 1.2);
-  transition: all .2s ease;
-}
+
