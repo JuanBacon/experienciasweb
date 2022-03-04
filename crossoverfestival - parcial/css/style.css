@@ -209,6 +209,36 @@ video {
 
 #pricing {
   background-color: brown;
+  background-image: url(../assets/img/pexels-foteros-352505.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-size: 30px;
+  justify-content: flex-start;
+  height: 70vh;
+}
+#pricing h2{
+  text-shadow: 2px 1px  #22BABB, 
+  2px 2px  #22BABB,
+  2px 3px  #22BABB,
+  2px 4px  #22BABB;
+}
+#pricingContent {
+  background-color: #1d1d1d;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+#pricingContent div{
+  margin: 30px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+#pricingContent div h3{
+  margin: 0;
 }
 
 #form {

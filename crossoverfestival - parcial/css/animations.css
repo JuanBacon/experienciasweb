@@ -103,5 +103,16 @@
   #success form #back:hover{
     background-color: #348888;
     transform: scale(1.05, 1.05);
+    transition: all 0.5s ease;
     color: #fff;
+  }
+
+  #pricingContent div:hover{
+    transform: scale(1.1, 1.1);
+    text-shadow:
+    0 0 7px #fff,
+    0 0 21px #fff,
+    0 0 42px #b93d46,
+    0 0 15px #b93d46;
+    transition: all 0.5s ease;
   }
