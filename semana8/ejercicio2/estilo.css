@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+}
+.column{
+    flex: content;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.column button{
+    width: 50%;
+    height: 5%;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
