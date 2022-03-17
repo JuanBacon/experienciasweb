@@ -6,7 +6,7 @@ function randomColor(number){
         colour += values[Math.floor(Math.random()*16)]
     }
     document.getElementsByClassName("column")[number].style = `background-color: ${colour}`;
-    document.getElementsByTagName("h1")[number].innerHTML = `${colour}`;
+    document.getElementsByTagName("h1")[number].innerHTML = `HEX: ${colour}`;
 }
 function firstColor(columns){
     for(var i = 0; i <= columns -1; i++){
