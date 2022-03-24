@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.row h1{
+    font-size: 50px;
+}
+.row figure img {
+    height: 420px;
+    width: 360px;
+    object-fit: fill;
+    border: 1px black solid;
+    padding: 0;
+}
+.row *{
+    padding: 5px;
+    margin: 10px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body onload="firstLoad()">
+    <section class="container">
+        <div class="row">
+            <h1>MEME GENERATOR</h1>
+            <figure>
+                <img alt="meme" id="memeImg">
+            </figure>
+            <form action="javascript:submit()">
+                <label for="captcha" id="captchaLabel">CAPTCHA:</label>
+                <br>
+                <input type="text" name="captcha" id="captcha">
+                <br>
+                <input type="submit" value="CHANGE" id="submit">
+            </form>
+        </div>
+    </section>
+    <script src="../js/script.js"></script>
+</body>
+</html>
