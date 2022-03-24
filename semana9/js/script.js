@@ -33,5 +33,5 @@ function getRandomCaptcha(){
 }
 
 function getRandomImage(){
-    imgContainer.src = imgDir + memesDir[Math.floor(Math.random()*5)]+ ".png"
+    imgContainer.src = imgDir + memesDir[Math.floor(Math.random()*5)]+ ".PNG"
 }
