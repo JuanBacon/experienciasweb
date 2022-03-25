@@ -8,19 +8,25 @@
 <body onload="firstLoad()">
     <section class="container">
         <div class="row">
-            <h1>MEME GENERATOR</h1>
+            <h1>GENERADOR DE MEMES</h1>
+            <P>por Juan Diego Bustamante</P>
             <figure>
                 <img alt="meme" id="memeImg">
             </figure>
             <form action="javascript:submit()">
-                <label for="captcha" id="captchaLabel">CAPTCHA:</label>
+                <h3>Completa el Captcha para continuar</h3>
+                <label for="captcha" id="captchaLabel"></label>
                 <br>
-                <input type="text" name="captcha" id="captcha">
+                <input type="text" name="captcha" id="captcha" placeholder="ACBDEF">
+                <input type="submit" value="MÁS MEMES" id="submit">
                 <br>
-                <input type="submit" value="CHANGE" id="submit">
+                <img onclick="getRandomCaptcha()" src="../assets/img/captcha/RecaptchaLogo.png" alt="captcha" id="captchaRe">
+                <div id="textErrorPlace"></div>
             </form>
         </div>
+        
     </section>
+    
     <script src="../js/script.js"></script>
 </body>
 </html>
