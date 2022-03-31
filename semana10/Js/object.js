@@ -13,7 +13,7 @@ function Carro(marca, modelo, color) {
 
 const carro4 = new Carro('Renault', 'sendero', 'gris');
 
-console.log(`Mi carro es un ${carro4.marca} ${carro4.modelo} ${carro4.color} `);
+// console.log(`Mi carro es un ${carro4.marca} ${carro4.modelo} ${carro4.color} `);
 
 const Vehiculo = {
     tipo: ["Carro", "Moto", "Bote"],
@@ -23,15 +23,15 @@ const Vehiculo = {
     motor: "1200HP"
 }
 
-console.log(Vehiculo.tipo[1]);
-console.log(Vehiculo.marca.nombre);
-console.log(Vehiculo.motor);
+// console.log(Vehiculo.tipo[1]);
+// console.log(Vehiculo.marca.nombre);
+// console.log(Vehiculo.motor);
 
 const car = {
     brand: "Susuki",
     model: "Swift",
     start: function () {
-        console.log(`Car started ${this.brand} ${this.model}`);
+        // console.log(`Car started ${this.brand} ${this.model}`);
     }
 }
 
