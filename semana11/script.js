@@ -33,6 +33,7 @@ function obtenerLocalStorage(){
     if(localStorage.getItem('persona')){
         const persona = JSON.parse(localStorage.getItem('persona'));
         console.log(persona);
+        console.log('besos');
     }
 }
 
