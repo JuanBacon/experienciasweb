@@ -9,7 +9,6 @@ export default function MiComponente() {
           <TextInput placeholder='Usuario' style={inputStyles.input}></TextInput>
           <TextInput placeholder='contraseña' secureTextEntry={true} style={inputStyles.input}></TextInput>
           <Button title='Iniciar sesion' style={inputStyles.input}></Button>
-          
       </View>
   );
 }
