@@ -9,11 +9,13 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import MiComponente from './src/components/MiComponente';
 import Componente from './src/components/Componente';
 import User from './src/screens/User';
+import Saludo from './src/components/Saludo';
 
 const menuNavigation = createBottomTabNavigator();
 
 export default function App() {
   return (
+    // STYLES 
     // <View style={styles.container}>
     //   {/* <MiComponente /> */}
     //   <Text style = {styles.textwhite}> Dominos's</Text>
@@ -24,12 +26,21 @@ export default function App() {
 
     //   </ScrollView>
     // </View>
-    <NavigationContainer>
-      <menuNavigation.Navigator>
-        <menuNavigation.Screen name ="User" component={User} options = {{tabBarIcon: () => icono ('happy-outline')}}></menuNavigation.Screen>
-        <menuNavigation.Screen name ="Info" component={Componente} options = {{tabBarIcon: () => icono ('information-outline')}}></menuNavigation.Screen>
-      </menuNavigation.Navigator>
-    </NavigationContainer>
+
+    // NAVIGATOR
+    // <NavigationContainer>
+    //   <menuNavigation.Navigator>
+    //     <menuNavigation.Screen name ="User" component={User} options = {{tabBarIcon: () => icono ('happy-outline')}}></menuNavigation.Screen>
+    //     <menuNavigation.Screen name ="Info" component={Componente} options = {{tabBarIcon: () => icono ('information-outline')}}></menuNavigation.Screen>
+    //   </menuNavigation.Navigator>
+    // </NavigationContainer>
+
+    // PROPS
+    <View style = {styles.container}>
+      <Saludo name = "Lauris"></Saludo>
+      <Saludo name = "Motomami" emoji= "🥰"></Saludo>
+    </View>
+    
   );
 }
 
